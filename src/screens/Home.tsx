@@ -28,7 +28,7 @@ export function Home() {
       <TextInput 
         placeholder='Nome do cliente'
         onChangeText={setName}
-        style={styles.input}
+        style={styles.input} 
       />
 
       <Button 
