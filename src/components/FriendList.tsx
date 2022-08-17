@@ -7,6 +7,7 @@ interface Props {
     id: number;
     name: string;
     likes: number;
+    online: string;
   }[]
   follow: () => void;
 }
@@ -25,7 +26,7 @@ export function FriendList({ data, follow }: Props) {
       {
         data.map(friend => (
           <Friend 
-            key={friend.id}
+            key={String(friend.id)}
             data={friend}
             follow={follow}
           />
